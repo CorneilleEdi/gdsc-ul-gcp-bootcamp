@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Index page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+</head>
+<body>
+<div class="container mt-5" >
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+
+            <table class="table table-striped">
+
+                <tbody class="">
+                <tr>
+                    <td><h6>Id</h6></td>
+                    <td><h6>{{ infos.id }}</h6></td>
+                </tr>
+                <tr>
+                    <td><h6>Zone</h6></td>
+                    <td><h6>{{ infos.zone }}</h6></td>
+                </tr>
+                <tr>
+                    <td><h6>Hostname</h6></td>
+                    <td><h6>{{ infos.hostname }}</h6></td>
+                </tr>
+                <tr>
+                    <td><h6>Machine</h6></td>
+                    <td><h6>{{ infos.machine }}</h6></td>
+
+                </tr>
+                <tr>
+                    <td><h6>Image</h6></td>
+                    <td><h6>{{ infos.image }}</h6></td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
