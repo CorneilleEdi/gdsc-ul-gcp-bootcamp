@@ -26,6 +26,7 @@ def index():
 
         return render_template('index.html',
                                infos={'id': id,
+                                      'name': name,
                                       'zone': zone,
                                       'hostname': hostname,
                                       'machine': machine,
