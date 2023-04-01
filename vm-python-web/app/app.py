@@ -18,6 +18,7 @@ def get_info(url):
 def index():
     try:
         id = get_info("http://metadata/computeMetadata/v1/instance/id")
+        name = get_info("http://metadata/computeMetadata/v1/instance/name")
         zone = get_info("http://metadata/computeMetadata/v1/instance/zone")
         hostname = get_info("http://metadata/computeMetadata/v1/instance/hostname")
         machine = get_info("http://metadata/computeMetadata/v1/instance/machine-type")
