@@ -1,0 +1,19 @@
+main:
+  steps:
+    - init:
+        assign:
+          - times: 2
+
+    - generate:
+        call: http.get
+        args:
+          url: "https://europe-west3-gdsc-ul-playground-eros.cloudfunctions.net/python-random-generator"
+          query:
+            times: ${times}
+        result: randomNumbers
+
+    - printResult:
+        call: sys.log
+        args:
+          data: ${randomNumbers}
+          severity: "DEBUG"

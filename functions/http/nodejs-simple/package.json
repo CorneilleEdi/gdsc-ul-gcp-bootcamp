@@ -1,0 +1,15 @@
+{
+  "name": "nodejs-simple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "functions-framework --target=handler --signature-type=http --port=8080"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.2.0"
+  }
+}

@@ -1,0 +1,25 @@
+swagger: '2.0'
+info:
+  title: Users API
+  version: 1.1.0
+paths:
+  /users:
+    get:
+      summary: Get list of users
+      operationId: getUsers
+      x-google-backend:
+        address: https://europe-west3-gdsc-ul-playground-eros.cloudfunctions.net/firestore-users-api-get
+      responses:
+        '200':
+          description: OK
+
+  /users/{user_id}:
+    get:
+      summary: Get user by ID
+      operationId: getUser
+      x-google-backend:
+        address: https://europe-west3-gdsc-ul-playground-eros.cloudfunctions.net/firestore-users-api-get
+        path_translation: CONSTANT_ADDRESS
+      responses:
+        '200':
+          description: OK
